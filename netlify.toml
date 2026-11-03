@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Rutas dedicadas (SPA): cualquier URL carga la app y React Router resuelve
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
